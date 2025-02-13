@@ -4,8 +4,8 @@ pipeline {
         timeout(time: 1,unit: 'HOURS')
     }
 
-    triggers{
-        cron('* * * * *')
+    // triggers{
+    //     cron('* * * * *')
     }
     stages {
         stage('Build') {
