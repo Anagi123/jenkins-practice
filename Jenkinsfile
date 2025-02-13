@@ -42,7 +42,7 @@ pipeline {
     success{
         echo 'I will only when job is success'
     }    
-    failure{
+    failure {
         echo 'I will only when job is success'
     }
 }
