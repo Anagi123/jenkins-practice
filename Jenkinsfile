@@ -1,6 +1,12 @@
 pipeline {
     agent { node { label 'AGENT-1' } }
+    options{
+        timeout(time: 1,unit: 'HOURS')
+    }
 
+    triggers{
+        cron('* * * * *')
+    }
     stages {
         stage('Build') {
             steps {
