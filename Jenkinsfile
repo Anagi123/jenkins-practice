@@ -8,6 +8,11 @@ pipeline {
     //     cron('* * * * *')
     // }
     stages {
+        pipeline {
+    agent any
+    options {
+        ansiColor('xterm')
+    }
         stage('Build') {
             steps {
                 echo 'Building..'
